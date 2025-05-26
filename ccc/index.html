@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clássicos sobre Rodas</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        header {
+            background-color: #8B0000;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-style: italic;
+            font-size: 1.2em;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav li {
+            margin: 0 20px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #FFD700;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        
+        .car-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        
+        .car-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            width: 30%;
+            margin-bottom: 30px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        
+        .car-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .car-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .car-info {
+            padding: 20px;
+        }
+        
+        .car-name {
+            font-size: 1.5em;
+            margin: 0 0 10px 0;
+            color: #8B0000;
+        }
+        
+        .car-price {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .car-description {
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .car-card {
+                width: 100%;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Clássicos sobre Rodas</div>
+        <div class="tagline">Preservando a história automotiva brasileira</div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#chevette">Chevette</a></li>
+            <li><a href="#kadett">Kadett</a></li>
+            <li><a href="#opala">Opala</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h2>Destaques da Nossa Coleção</h2>
+        
+        <div class="car-section">
+            <!-- Chevette -->
+            <div class="car-card" id="chevette">
+                <div class="car-image" style="background-image: url('https://example.com/chevette.jpg');"></div>
+                <div class="car-info">
+                    <h3 class="car-name">Chevette</h3>
+                    <div class="car-price">R$ 35.000 - R$ 80.000</div>
+                    <p class="car-description">
+                        O Chevette é um ícone dos anos 80 no Brasil. Modelos disponíveis: 
+                        Chevette SL, Chevette JR e Chevette Tubarão. Peças originais e 
+                        restauradas disponíveis.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Kadett -->
+            <div class="car-card" id="kadett">
+                <div class="car-image" style="background-image: url('https://example.com/kadett.jpg');"></div>
+                <div class="car-info">
+                    <h3 class="car-name">Kadett</h3>
+                    <div class="car-price">R$ 40.000 - R$ 90.000</div>
+                    <p class="car-description">
+                        O Kadett marcou época com seu design elegante e desempenho. 
+                        Temos modelos GSI, L e Caravan em nosso acervo. Todos com 
+                        documentação em dia e revisados.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Opala -->
+            <div class="car-card" id="opala">
+                <div class="car-image" style="background-image: url('https://example.com/opala.jpg');"></div>
+                <div class="car-info">
+                    <h3 class="car-name">Opala</h3>
+                    <div class="car-price">R$ 50.000 - R$ 150.000</div>
+                    <p class="car-description">
+                        O lendário Opala, com seus motores 6 cilindros e versões 
+                        especiais como o Diplomata e SS. Colecionamos modelos 
+                        desde 1968 até 1992.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 Clássicos sobre Rodas - Todos os direitos reservados</p>
+        <p>Especializados em Chevette, Kadett e Opala</p>
+    </footer>
+</body>
+</html>
